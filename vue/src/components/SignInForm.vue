@@ -57,7 +57,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
 export default Vue.extend({
+    name: "SignInForm",
+
 
     data: () => ({
 
@@ -73,11 +76,6 @@ export default Vue.extend({
           required: (value : string) => !!value || 'Required.',
         },
     })
-
-
-
-    
-
     
 })
 </script>

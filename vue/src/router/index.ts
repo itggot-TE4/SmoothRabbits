@@ -12,7 +12,9 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/signin',
-    name: 'SignIn',
+    name: 'SignInPage',
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/SignInPage.vue")
   },
   {
     path: "/about",
