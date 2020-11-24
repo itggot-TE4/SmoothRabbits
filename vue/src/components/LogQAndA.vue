@@ -16,8 +16,5 @@ import Vue from "vue";
 export default Vue.extend({
   name: "LogQAndA",
   props: ["question", "answer"],
-
-  data: () => ({
-  })
 });
 </script>
