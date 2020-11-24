@@ -1,7 +1,12 @@
 <template>
   <v-app>
     <v-main>
+
       <NavBar />
+
+      <router-view>
+      </router-view>
+
     </v-main>
   </v-app>
 </template>
@@ -15,6 +20,7 @@ export default Vue.extend({
 
   components: {
     NavBar
+
   },
 
   data: () => ({
@@ -22,3 +28,7 @@ export default Vue.extend({
   })
 });
 </script>
+
+<style>
+
+</style>

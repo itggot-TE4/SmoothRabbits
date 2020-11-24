@@ -26,6 +26,20 @@
 
       <v-col class="mb-5" cols="12">
         <h2 class="headline font-weight-bold mb-3">
+          ALEX LÄNK
+        </h2>
+
+        <v-row justify="center">
+          <router-link
+            to="/signin"
+          >Länk till SignIn, Den ska läggas i navbar
+          
+          </router-link>
+        </v-row>
+      </v-col>
+
+      <v-col class="mb-5" cols="12">
+        <h2 class="headline font-weight-bold mb-3">
           What's next?
         </h2>
 
@@ -88,6 +102,16 @@ export default Vue.extend({
   name: "HelloWorld",
 
   data: () => ({
+    alexLankTillLogIn: [
+      {
+        text: 'Alex länk',
+        href: '/signin',
+      }
+    ],
+
+
+
+
     ecosystem: [
       {
         text: "vuetify-loader",
