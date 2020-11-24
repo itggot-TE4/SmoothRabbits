@@ -10,6 +10,12 @@ const routes: Array<RouteConfig> = [
     name: "Home",
     component: Home
   },
+
+  {
+    path: '/signin',
+    name: 'SignIn',
+  },
+
   {
     path: "/about",
     name: "About",
