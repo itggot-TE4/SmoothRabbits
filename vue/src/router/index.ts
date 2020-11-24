@@ -8,7 +8,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    // component: Home
   },
   {
     path: '/signin',
@@ -22,7 +22,14 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+  },
+  // {
+  //   // devTesting
+  //   path: "/timeline",
+  //   name: "CommentTimeline",
+  //   component: () =>
+  //     import(/* webpackChunkName: "about" */ "../views/CommentTimeline.vue")
+  // }
 ];
 
 const router = new VueRouter({
