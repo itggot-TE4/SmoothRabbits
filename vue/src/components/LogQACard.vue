@@ -14,7 +14,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "LogQAndA",
+  name: "LogQACard",
   props: ["question", "answer"],
 });
 </script>
