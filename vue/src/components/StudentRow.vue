@@ -18,6 +18,17 @@
             </v-col>
 
             <v-col
+            cols="auto"
+            class="d-flex justify-center align-center"
+            style="max-width: 192px;"
+            >
+                <v-select 
+                name="selectTeacher" 
+                :items ='SelectableTeachers'
+                ></v-select>
+            </v-col>
+
+            <v-col
             cols="4"
             class="d-flex justify-center align-center"
             >
@@ -41,7 +52,6 @@
                 </v-btn>
             </v-col>
         </v-col>
-
     </v-row>
 
 </template>
@@ -52,6 +62,7 @@ export default Vue.extend({
       data: () => ({
         show1: false,
         password: '',
+        SelectableTeachers: ['Daniel Berg', 'Linus Styren', 'Fredrik Kronhamn', 'Ola Lindgren'],
     })
 
 
