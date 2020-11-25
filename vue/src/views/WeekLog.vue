@@ -1,6 +1,6 @@
 <template>
   <div class="weekLog">
-    <Bladder/>
+    <Bladder />
     <LogContainer />
   </div>
 </template>

@@ -25,11 +25,13 @@
         </v-data-table>
     </v-row>
 
+
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 export default Vue.extend({
+
       data: () => ({
         SelectableTeachers: ['Daniel Berg', 'Linus Styren', 'Fredrik Kronhamn', 'Ola Lindgren'],
         headers: [
@@ -54,3 +56,4 @@ export default Vue.extend({
   
 })
 </script>
+
