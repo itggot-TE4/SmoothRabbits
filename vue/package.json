@@ -8,7 +8,7 @@
         "test:unit": "vue-cli-service test:unit",
         "test": "npm run test:unit",
         "lint": "vue-cli-service lint",
-        "postinstall": "npx husky install"
+        "postinstall": "cd .. && npx husky install ./vue"
     },
     "dependencies": {
         "@mdi/font": "^5.8.55",
