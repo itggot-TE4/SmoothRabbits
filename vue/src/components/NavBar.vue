@@ -23,17 +23,22 @@
         style="height:100%"
 
         >
+        <router-link
+            style="text-decoration: none; color:black; height:100%; width:100%"
+            to="/admin"
+        >
             <v-btn 
             style="border-radius: 0px; height:100%; width:100%"
             elevation="0"
             >
-                <v-icon
-                class="mr-2"
-                >
-                    mdi-cog
-                </v-icon>
-                Admin
+                    <v-icon
+                    class="mr-2"
+                    >
+                        mdi-cog
+                    </v-icon>
+                    Admin
             </v-btn>
+                </router-link>
         </v-col>
             <v-divider vertical></v-divider>
         <v-col
@@ -61,13 +66,13 @@
         style="height:100%"
         
         >
-            <v-btn 
-            style="border-radius: 0px; height:100%; width:100%"
-            elevation="0"
+            <router-link
+                style="text-decoration: none; color:black; height:100%; width:100%;"
+                to="/signin"
             >
-                <router-link
-                    style="text-decoration: none; color:black;"
-                    to="/signin"
+                <v-btn 
+                style="border-radius: 0px; height:100%; width:100%"
+                elevation="0"
                 >
                     
                     <v-icon
@@ -76,8 +81,8 @@
                         mdi-lock-open
                     </v-icon>
                     Login
-                 </router-link>
-            </v-btn>
+                </v-btn>
+            </router-link>
         </v-col>
     </v-app-bar>
 
