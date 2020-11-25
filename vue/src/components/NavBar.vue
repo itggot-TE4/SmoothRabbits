@@ -4,10 +4,15 @@
         <v-col
         cols="9"
         >
-            <h2
-            class="ma-auto ml-10 font-weight-medium"
-            >Log-o-matic</h2>
+              <router-link
+                    style="text-decoration: none; color:black;"
+                    to="/"
+                >
                 
+                    <h2
+                    class="ma-auto ml-10 font-weight-medium"
+                    >Log-o-matic</h2>
+                </router-link>
 
         </v-col>
 
@@ -54,18 +59,24 @@
         cols="1"
         class="pa-0 d-flex justify-center align-center"
         style="height:100%"
-
+        
         >
             <v-btn 
             style="border-radius: 0px; height:100%; width:100%"
             elevation="0"
             >
-                <v-icon
-                class="mr-2"
+                <router-link
+                    style="text-decoration: none; color:black;"
+                    to="/signin"
                 >
-                    mdi-lock-open
-                </v-icon>
-                Login
+                    
+                    <v-icon
+                    class="mr-2"
+                    >
+                        mdi-lock-open
+                    </v-icon>
+                    Login
+                 </router-link>
             </v-btn>
         </v-col>
     </v-app-bar>
