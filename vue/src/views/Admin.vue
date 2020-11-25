@@ -1,20 +1,23 @@
 <template>
-    <div class="admin">
-        <StudentCreate />
-        <TeacherCreate />
-    </div>
+    <v-container class="mt-5">
+        <TeacherOverview />
+        <StudentOverview />
+
+    </v-container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import StudentCreate from "../components/StudentCreate.vue";
-import TeacherCreate from "../components/TeacherCreate.vue";
+
+import TeacherOverview from "../components/TeacherOverview.vue";
+import StudentOverview from "../components/StudentOverview.vue";
+
 
 export default Vue.extend({
-    name: "admin",
+    name: "Admin",
     components: {
-        StudentCreate,
-        TeacherCreate
+        TeacherOverview,
+        StudentOverview
     }
 });
 </script>
