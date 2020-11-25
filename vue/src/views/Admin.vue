@@ -1,20 +1,20 @@
 <template>
     <div class="admin">
-        <Studentcreate />
-        <Teachercreate />
+        <StudentCreate />
+        <TeacherCreate />
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import Studentcreate from "../components/Studentcreate.vue";
-import Teachercreate from "../components/Teachercreate.vue";
+import StudentCreate from "../components/StudentCreate.vue";
+import TeacherCreate from "../components/TeacherCreate.vue";
 
 export default Vue.extend({
     name: "admin",
     components: {
-        Studentcreate,
-        Teachercreate
+        StudentCreate,
+        TeacherCreate
     }
 });
 </script>

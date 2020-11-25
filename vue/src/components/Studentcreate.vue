@@ -56,6 +56,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-    name:"Studentcreate",
+    name:"StudentCreate",
 })
 </script>
