@@ -3,7 +3,7 @@ import Home from "@/views/Home.vue";
 
 describe("Home.vue", () => {
   it("renders the correct welcome text", () => {
-    const msg = "Welcome to Log-O-Matic";
+    const msg = "Welcome to Log-o-Matic";
 
     const wrapper = shallowMount(Home);
 

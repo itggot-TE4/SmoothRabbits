@@ -30,10 +30,8 @@
         </h2>
 
         <v-row justify="center">
-          <router-link
-            to="/signin"
-          >Länk till SignIn, Den ska läggas i navbar
-          
+          <router-link to="/signin"
+            >Länk till SignIn, Den ska läggas i navbar
           </router-link>
         </v-row>
       </v-col>
@@ -104,13 +102,10 @@ export default Vue.extend({
   data: () => ({
     alexLankTillLogIn: [
       {
-        text: 'Alex länk',
-        href: '/signin',
+        text: "Alex länk",
+        href: "/signin"
       }
     ],
-
-
-
 
     ecosystem: [
       {
