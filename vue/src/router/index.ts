@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import { component } from 'vue/types/umd';
+import { component } from "vue/types/umd";
 import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
@@ -12,8 +12,8 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/Home.vue")
   },
   {
-    path: '/signin',
-    name: 'SignInPage',
+    path: "/signin",
+    name: "SignInPage",
     component: () => import("../views/SignInPage.vue")
   },
   {
@@ -26,20 +26,17 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-
     path: "/admin",
     name: "Admin",
 
-    
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Admin.vue")
-   },
-   {
+  },
+  {
     path: "/weeklog",
     name: "WeekLog",
     component: () => import("../views/WeekLog.vue")
-
-  },
+  }
   // {
   //   // devTesting
   //   path: "/timeline",

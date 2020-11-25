@@ -4,6 +4,7 @@
         <StudentOverview />
 
     </v-container>
+
 </template>
 
 <script lang="ts">
@@ -19,5 +20,6 @@ export default Vue.extend({
         TeacherOverview,
         StudentOverview
     }
+
 });
 </script>
