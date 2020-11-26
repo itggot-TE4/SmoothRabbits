@@ -11,8 +11,7 @@ export default {
   },
   getters: {
     journals: (state: any) => (yearWeek: number) => {
-      return state.test
-      
+      return state.test;
     }
   }
 };

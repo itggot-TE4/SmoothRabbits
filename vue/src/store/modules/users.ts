@@ -4,7 +4,6 @@ import store from "@/store/index";
 
 Vue.use(Vuex);
 
-
 export default {
   namespaced: true,
   state: {
@@ -14,9 +13,9 @@ export default {
       {
         id: 1,
         type: "admin",
-        email: "admin@admin.se",
+        email: "a@a",
         name: "admin",
-        password: "sand"
+        password: "a"
       },
       {
         id: 2,
@@ -36,28 +35,35 @@ export default {
       },
       {
         id: 4,
-        type: "student",
-        email: "daniel@elev.ga.ntig.se",
+        type: "teacher",
+        email: "daniel@se",
         name: "Daniel",
         password: "sand"
-      },
+      }
     ]
   },
-  actions: {
-  },
+  actions: {},
   getters: {
-    getStudents(state : any) {
-      return state.users.filter(function(x : any) { return x.type == "student"; });
+    getStudents(state: any) {
+      return state.users.filter(function(x: any) {
+        return x.type == "student";
+      });
     },
-    getTeachers(state : any) {
-      return state.users.filter(function(x : any) { return x.type == "teacher"; });
+    getTeachers(state: any) {
+      return state.users.filter(function(x: any) {
+        return x.type == "teacher";
+      });
     },
-    getAdmins(state : any) {
-      return state.users.filter(function(x : any) { return x.type == "admin"; });
+    getAdmins(state: any) {
+      return state.users.filter(function(x: any) {
+        return x.type == "admin";
+      });
     },
     getById: (state: any) => (id: number) => {
-      return state.users.filter((x : any) => x.id == id )[0];
+      return state.users.filter((x: any) => x.id == id)[0];
+    },
+    getByEmail: (state: any) => (email: string) => {
+      return state.users.filter((x: any) => x.email == email)[0];
     }
-
   }
 };
