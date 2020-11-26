@@ -39,7 +39,9 @@
       <v-divider></v-divider>
 
       <v-container class="d-flex flex-row-reverse">
-        <v-btn :disabled="!valid" color="success" class="mr-4">Sign In</v-btn>
+        <v-btn :disabled="!valid" color="success" class="mr-4" @click="auth()"
+          >Sign In</v-btn
+        >
       </v-container>
     </v-card>
   </v-container>
@@ -47,6 +49,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import store from "../store/index";
 
 export default Vue.extend({
   name: "SignInForm",
@@ -63,6 +66,14 @@ export default Vue.extend({
     passwordRules: {
       required: (value: string) => !!value || "Required."
     }
-  })
+  }),
+  methods: {
+    auth() {
+      store.dispatch("auth/authenticate", {
+        pass: this.password,
+        email: this.email
+      });
+    }
+  }
 });
 </script>
