@@ -43,6 +43,11 @@ const routes: Array<RouteConfig> = [
     path: "/weeklog",
     name: "WeekLog",
     component: () => import("../views/WeekLog.vue")
+  },
+  {
+    path: "/dayLog",
+    name: "DayLog",
+    component: () => import("../views/DayLog.vue")
   }
   // {
   //   // devTesting
