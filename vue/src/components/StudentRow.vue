@@ -6,6 +6,8 @@
         style="width:98%"
         :headers="headers"
         :items="students"
+        hide-default-footer
+        disable-pagination
         >
         <template v-slot:item.teacherName="props">
             <v-select 

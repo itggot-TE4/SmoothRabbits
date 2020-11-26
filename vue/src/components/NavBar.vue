@@ -33,12 +33,17 @@
       class="pa-0 d-flex justify-center align-center"
       style="height:100%"
     >
-      <v-btn style="border-radius: 0px; height:100%; width:100%" elevation="0">
-        <v-icon class="mr-2">
-          mdi-format-list-bulleted
-        </v-icon>
-        Logs
-      </v-btn>
+      <router-link
+        style="text-decoration: none; color:black; height:100%; width:100%"
+        to="/logs"
+      >
+        <v-btn style="border-radius: 0px; height:100%; width:100%" elevation="0">
+          <v-icon class="mr-2">
+            mdi-format-list-bulleted
+          </v-icon>
+          Logs
+        </v-btn>
+      </router-link>
     </v-col>
     <v-divider vertical></v-divider>
     <v-col
