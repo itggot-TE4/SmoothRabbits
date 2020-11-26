@@ -1,5 +1,3 @@
-
-
 interface User {
   id: number;
   type: string;
@@ -7,4 +5,9 @@ interface User {
   name: string;
   password: string;
   teacherId: number;
+}
+
+interface Credentials {
+  email: string,
+  pass: string
 }
