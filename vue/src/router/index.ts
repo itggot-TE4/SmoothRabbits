@@ -33,6 +33,13 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "../views/Admin.vue")
   },
   {
+    path: "/logbook",
+    name: "Logbook",
+
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Logbook.vue")
+  },
+  {
     path: "/weeklog",
     name: "WeekLog",
     component: () => import("../views/WeekLog.vue")
