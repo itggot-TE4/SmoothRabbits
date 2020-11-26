@@ -1,6 +1,12 @@
 <template>
   <v-row class="d-flex justify-center">
-    <v-data-table style="width:98%" :headers="headers" :items="teachers">
+    <v-data-table
+    style="width:98%"
+    :headers="headers"
+    :items="teachers"
+    hide-default-footer
+    disable-pagination
+    >
       <template v-slot:item.password="props">
         <v-text-field
           v-model="props.item.password"

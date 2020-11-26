@@ -1,6 +1,14 @@
 <template>
-  <v-row class="d-flex justify-center">
-    <v-data-table style="width:98%" :headers="headers" :items="students">
+    <v-row 
+    class="d-flex justify-center"
+    >
+        <v-data-table
+        style="width:98%"
+        :headers="headers"
+        :items="students"
+        hide-default-footer
+        disable-pagination
+        >
       <template v-slot:item.teacherName="props">
         <v-select
           style="max-width:192px"
@@ -18,6 +26,7 @@
       <template v-slot:item.resetbtn="props">
         <v-btn v-model="props.item.resetbtn" elevation="1" color="primary" tile
           >RESET</v-btn
+
         >
       </template>
     </v-data-table>
