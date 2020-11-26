@@ -21,8 +21,8 @@ export default Vue.extend({
     NavBar
   },
   beforeMount: function() {
-    console.log("here")
-    store.dispatch("auth/authorize")
+    console.log("here");
+    store.dispatch("auth/authorize");
   },
   computed: {
     currentUser() {

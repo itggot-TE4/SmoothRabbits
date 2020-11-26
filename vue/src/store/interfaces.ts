@@ -8,6 +8,6 @@ interface User {
 }
 
 interface Credentials {
-  email: string,
-  pass: string
+  email: string;
+  pass: string;
 }
