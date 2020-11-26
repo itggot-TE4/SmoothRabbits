@@ -5,19 +5,17 @@ import router from "@/router/index";
 
 Vue.use(Vuex);
 
-
 export default {
   namespaced: true,
   state: {
     namespaced: true,
     user: {},
     authorizationSettings: {
-      "all": ["/home", "/signin"],
-      "admin": ["/admin"],
-      "teacher": ["/logs"],
-      "student": ["/logbook"],
+      all: ["/home", "/signin"],
+      admin: ["/admin"],
+      teacher: ["/logs"],
+      student: ["/logbook"]
     }
-    
   },
   mutations: {
     setUser(state: any, user: User) {
@@ -36,39 +34,38 @@ export default {
 
           switch (user.type) {
             case "admin":
-              router.push('admin')
+              router.push("admin");
               break;
             case "teacher":
-              router.push('logs')
+              router.push("logs");
               break;
             case "student":
-              router.push('logbook')
+              router.push("logbook");
               break;
             default:
               break;
           }
-
-
         }
       }
     },
     authorize(state: any) {
-      const path = router.currentRoute.path
-      const user = state.user
+      const path = router.currentRoute.path;
+      const user = state.user;
       // const user = store.getters["auth/getUser"];
-      
+
       if (user == undefined) {
-        router.push("/signin")
+        router.push("/signin");
       } else {
-        if (state.authorizationSettings[user.type].includes(path) || state.authorizationSettings["all"].includes(path)) {
+        if (
+          state.authorizationSettings[user.type].includes(path) ||
+          state.authorizationSettings["all"].includes(path)
+        ) {
           //  user is allowed in path
         } else {
           //  user not allowed to visit path
-          router.push('/signin')
+          router.push("/signin");
         }
       }
-
-
     },
     setUser(state: any, userId: number) {
       const user = store.getters["users/getById"](userId);

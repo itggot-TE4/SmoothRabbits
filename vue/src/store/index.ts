@@ -14,6 +14,6 @@ export default new Vuex.Store({
     users: users,
     auth: auth,
     journals: journals
-  },
+  }
   // plugins: [createPersistedState()]
 });
