@@ -5,7 +5,7 @@
 
     <!-- INPUT -->
     <div class="d-flex flex-row ma-5">
-      <v-text-field v-model="Email" label="Email" required></v-text-field>
+      <v-text-field v-model="email" label="Email" required></v-text-field>
 
       <v-text-field v-model="name" label="Name" required></v-text-field>
 
@@ -14,15 +14,32 @@
 
     <!-- BUTTON -->
     <div class="d-flex align-end flex-column ma-5">
-      <v-btn color="success" @click="validate">CREATE</v-btn>
+      <v-btn color="success" @click="addTeacher()">CREATE</v-btn>
     </div>
   </v-form>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import store from "../store/index";
 
 export default Vue.extend({
-  name: "TeacherCreate"
+  name: "TeacherCreate",
+
+  data: () => ({
+    email: '',
+    name: '',
+    password: ''
+  }),
+
+    methods: {
+      addTeacher() {
+        store.dispatch("users/addTeacher", {
+          name: this.name,
+          password: this.password,
+          email: this.email
+        });
+     }
+    }
 });
 </script>
