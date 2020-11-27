@@ -35,6 +35,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import store from "../store/index";
 export default Vue.extend({
   data: () => ({
     SelectableTeachers: [
@@ -50,16 +51,11 @@ export default Vue.extend({
       { text: "", value: "password", sortable: false },
       { text: "", value: "resetbtn", sortable: false }
     ],
-    students: [
-      { email: "sinead.marquez@elev.ga.ntig.se", name: "Sinead Marquez" },
-      { email: "hareem.huff@elev.ga.ntig.se", name: "Hareem Huff" },
-      { email: "sonny.garrison@elev.ga.ntig.se", name: "Sonny Garrison" },
-      { email: "phillippa.brown@elev.ga.ntig.se", name: "Phillippa Brown" },
-      { email: "ava-rose.snyder@elev.ga.ntig.se", name: "Ava-Rose Snyder" },
-      { email: "albi.rose@elev.ga.ntig.se", name: "Albi Rose" },
-      { email: "damian.hernandez@elev.ga.ntig.se", name: "Damian Hernandez" },
-      { email: "onur.bird@elev.ga.ntig.se", name: "Onur Bird" }
-    ]
-  })
+  }),
+  computed: {
+    students() {
+      return store.getters["users/getStudents"];
+    }
+  }
 });
 </script>

@@ -24,6 +24,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import store from "../store/index";
 export default Vue.extend({
   name: "TeacherRow",
 
@@ -34,12 +35,11 @@ export default Vue.extend({
       { text: "", value: "password", sortable: false },
       { text: "", value: "resetbtn", sortable: false }
     ],
-    teachers: [
-      { email: "daniel.berg@ga.ntig.se", name: "Daniel Berg" },
-      { email: "linus.styren@ga.ntig.se", name: "Linus Styren" },
-      { email: "fredrik.kronhamn@ga.ntig.se", name: "Fredrik Kronhamn" },
-      { email: "ola.lindgren@ga.ntig.se", name: "Ola Lindgren" }
-    ]
-  })
+  }),
+  computed: {
+    teachers() {
+      return store.getters["users/getTeachers"];
+    }
+  }
 });
 </script>

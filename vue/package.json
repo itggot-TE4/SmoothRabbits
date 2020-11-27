@@ -15,6 +15,8 @@
         "@mdi/js": "^5.8.55",
         "core-js": "^3.6.5",
         "mdi": "^2.2.43",
+        "node-sass": "^5.0.0",
+        "uuid": "^8.3.1",
         "vue": "^2.6.11",
         "vue-router": "^3.2.0",
         "vuetify": "^2.2.11",
@@ -23,6 +25,7 @@
     },
     "devDependencies": {
         "@types/jest": "^24.0.19",
+        "@types/uuid": "^8.3.0",
         "@typescript-eslint/eslint-plugin": "^2.33.0",
         "@typescript-eslint/parser": "^2.33.0",
         "@vue/cli-plugin-babel": "~4.5.0",
@@ -41,8 +44,10 @@
         "husky": "^5.0.4",
         "prettier": "^1.19.1",
         "sass": "^1.19.0",
+
         "sass-loader": "^8.0.0",
         "ts-jest": "^26.4.4",
+
         "typescript": "~3.9.3",
         "vue-cli-plugin-vuetify": "^2.0.7",
         "vue-jest": "^3.0.7",

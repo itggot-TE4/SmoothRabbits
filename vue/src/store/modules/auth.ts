@@ -13,7 +13,7 @@ export default {
     authorizationSettings: {
       all: ["/home", "/signin"],
       admin: ["/admin"],
-      teacher: ["/logs"],
+      teacher: ["/logs", "/dayLog"],
       student: ["/logbook"]
     }
   },
