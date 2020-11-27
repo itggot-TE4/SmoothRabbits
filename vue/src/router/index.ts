@@ -43,6 +43,11 @@ const routes: Array<RouteConfig> = [
     path: "/dayLog",
     name: "DayLog",
     component: () => import("../views/DayLog.vue")
+  },
+  {
+    path: "/singleLog",
+    name: "SingleLog",
+    component: () => import("../views/SingleLog.vue")
   }
 ];
 

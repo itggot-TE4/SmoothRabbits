@@ -17,7 +17,7 @@
                     </v-container>
 
                 
-                <a style="text-decoration:none;" href="">
+                <a style="text-decoration:none;" href="/singleLog">
                     <v-icon style="font-size:34px;color: orange; fill: currentColor;" v-if="props.item.mon === 'missing'">mdi-alert-circle</v-icon>
 
                     <v-container v-if="props.item.mon === 'read'">
@@ -40,7 +40,7 @@
                         <a style="text-decoration:none;color:black;" href="/dayLog">{{props.item.tues}}</a>
                     </v-container>
                     
-                <a style="text-decoration:none;" href="">
+                <a style="text-decoration:none;" href="/singleLog">
                     <v-icon style="font-size:34px;color: orange; fill: currentColor;" v-if="props.item.tues === 'missing'">mdi-alert-circle</v-icon>
 
                     <v-container v-if="props.item.tues === 'read'">
@@ -63,7 +63,7 @@
                         <a style="text-decoration:none;color:black;" href="/dayLog">{{props.item.wed}}</a>
                     </v-container>
                 
-                <a style="text-decoration:none;" href="">
+                <a style="text-decoration:none;" href="/singleLog">
                     <v-icon style="font-size:34px;color: orange; fill: currentColor;" v-if="props.item.wed === 'missing'">mdi-alert-circle</v-icon>
 
                     <v-container v-if="props.item.wed === 'read'">
@@ -86,7 +86,7 @@
                         <a style="text-decoration:none;color:black;" href="/dayLog">{{props.item.thu}}</a>
                     </v-container>
                 
-                <a style="text-decoration:none;" href="">
+                <a style="text-decoration:none;" href="/singleLog">
                     <v-icon style="font-size:34px;color: orange; fill: currentColor;" v-if="props.item.thu === 'missing'">mdi-alert-circle</v-icon>
 
                     <v-container v-if="props.item.thu === 'read'">
@@ -109,7 +109,7 @@
                         <a style="text-decoration:none;color:black;" href="/dayLog">{{props.item.fri}}</a>
                     </v-container>
                 
-                <a style="text-decoration:none;" href="">
+                <a style="text-decoration:none;" href="/singleLog">
                     <v-icon style="font-size:34px;color: orange; fill: currentColor;" v-if="props.item.fri === 'missing'">mdi-alert-circle</v-icon>
 
                     <v-container v-if="props.item.fri === 'read'">

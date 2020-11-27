@@ -1,20 +1,20 @@
 <template>
   <v-container>
-    <v-card elevation="5" class="pb-1">
+    <v-card class="pb-1">
       <!-- QUESTION CARD -->
       <h1 class="ma-10">Log Book</h1>
 
       <v-card
         v-for="item in items"
         v-bind:key="item"
-        elevation="4"
         class="ma-15 pa-5"
+        elevation="0"
       >
         <h2 class="font-weight-light">
           {{ item.question }}
         </h2>
 
-        <v-textarea solo label="Answer"></v-textarea>
+        <v-textarea solo label="Answer" class="elevation-0"></v-textarea>
       </v-card>
 
       <!-- SAVE BUTTON -->
