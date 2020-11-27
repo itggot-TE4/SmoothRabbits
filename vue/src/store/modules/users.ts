@@ -20,9 +20,9 @@ export default {
       {
         id: 2,
         type: "student",
-        email: "jacob@elev.ga.ntig.se",
-        name: "Jacob",
-        password: "sand",
+        email: "s@s",
+        name: "Student",
+        password: "s",
         teacherId: 4
       },
       {
@@ -36,9 +36,9 @@ export default {
       {
         id: 4,
         type: "teacher",
-        email: "daniel@se",
-        name: "Daniel",
-        password: "sand"
+        email: "t@t",
+        name: "teacher",
+        password: "t"
       }
     ]
   },
