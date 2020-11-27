@@ -21,9 +21,9 @@ export default {
       {
         id: "2",
         type: "student",
-        email: "jacob@elev.ga.ntig.se",
-        name: "Jacob",
-        password: "sand",
+        email: "s@s",
+        name: "Student",
+        password: "s",
         teacherId: 4
       },
       {
@@ -47,6 +47,13 @@ export default {
         email: "hyra@damp.swe",
         name: "Alexander",
         password: "sand"
+      }
+        {
+        id: '6'
+        type: "teacher"
+        email: "t@t",
+        name: "teacher",
+        password: "t"
       }
     ]
   },
